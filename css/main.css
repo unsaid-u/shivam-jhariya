@@ -3,9 +3,7 @@
 	padding: 0;
 }
 
-body{
-	background-color: #0E1017 /*#0E1017/*#1C2833 /*black*/;
-}
+
 
 ::-webkit-scrollbar {
   display: none;
@@ -13,65 +11,64 @@ body{
 }
 
 body {
+	background-color: black;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
 
 
-.container-fluid{
+#nav{
 	width: 100%;
-	height: 100%;
-	padding: 0;
-}
-
-.navbar{
-	height: 6%;
-	width: 100%;
-	background-color:/*#2C3E50*/ black ;
-	text-align: center;
+	height: 40px;
+	background-color: black;
 	position: fixed;
-	
+	text-align: center;
+	top: 0;
+	z-index: 1000;
 }
 
-.navbar p {
+#nav p{
+	
 	color: #B5B9C5 /*#93969D /*#F5B041*/;
 	font-size: 1.7em;
 	font-family: "IM Fell Double Pica" ,"IM Fell English" , serif;
-	position: absolute;
-  	top: 50%;
-  	left: 40%;
-  	transform: translateY(-50%);
+	font-style: italic;
+	padding-top: 3px;
 }
+
 
 #page1{
 	width: 100%;
+	height: 1000px;
 	background-image: linear-gradient(#0C0D12 ,#0E1017,#161B26 ,#252C3F ,#293146  );
-	margin:0;
+	
 }
 
 #name{
-	width: 25%;
-	height: 100%;
 	position: relative;
-	left:40%;
-	margin-top: 8%;
+	top: 80px;
+	width: 70%;
+	height: 800px;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
-	/*margin: 0 auto;*/
+	/*margin-top: 60px;
+	background-color: white;*/
+
 }
 
 #name p{
 	text-align: center;
 	margin-bottom: 0px;
 	font-size: 1.2em;
-	color: white;
 	font-family: "Work Sans", serif; 
 	color: #93969D /*#F5B041*/;
 
 }
 
 #name h1{
-	margin-top: 0;
 	text-align: center;
+	margin-top: 0;
 	font-size: 10em;
 	font-weight: bolder;
 	color: white;
@@ -81,194 +78,163 @@ body {
 }
 
 #name h3{
+	text-align: center;
 	margin-top: 0;
 	color: white;
-	text-align: center;
 	font-family: "Nova Flat","Work Sans" ,serif;
 	color: #B5B9C5 /*#F5B041*/;
 	letter-spacing: 0.1em;
 }
 
-
-#profilepic{
-	width: 100%;
+#plus p{
+	text-align: center;
+	color: black;
+	font-size: 1.7em;
 }
 
 #profilepic img{
 	
-	height: 60%;
-	width: 53%;
-	margin-top: 10%;
-	margin-bottom:  10%;
-	margin-left: 5%;
-}
-
-.social-media{
-	height: 30%;
-	position: fixed;
-	right: 3%;
-	top:50%;
-	transform: translateY(-50%);
-	z-index: 1000;
-}
-
-#icon {
-	/*padding-bottom: 150%;/*edit this so you can get a proper hover effect
-	padding-top: 150%;*/
-	margin-top: 150%;
-	border-radius: 25px;
-}
-
-#icon:hover{
-	background-color:  white;
-}
-
-#page2{
-	width: 100%;
-	height: 100%;
-	margin: 0;
-	padding: 0;
-
+	width: 20%;
+	height: 20%;
+	margin-top: 3.7%;
+	margin-bottom: 3.7%;
 }
 
 #blackstrip{
 	width: 100%;
-	top: 100%;
+	height: 100px;
 	background-color: black;
-	position: relative;
-	margin:0;
+	margin: 0;
+	padding: 0;
 }
 
 #vbg{
 	width: 100%;
-	height: 100%;
 	background-image: url('video-bg03.jpg');
-	background-size: cover; 
-	margin: 0;
-	padding: 0;
-	position: relative;	
-	margin-bottom: 0;
+	/*background-size: cover; */
+	text-align: center;
 }
 
 #vbg video{
+	
 	height: 65%;
 	width: 65%;
-	position: relative;
-	left: 20%;
-	margin-top: 7%;
-	margin-bottom: 7%; 
+	margin-bottom: 10%; 
+	margin-top:10%;
+}
+/*-------------------------------------------------------------*/
+
+#page2{
+	margin-top: 0;
+	padding-top: 0;
+	width: 100%;
+	background-image: linear-gradient(#293146 ,#252C3F ,#161B26 ,#0E1017,#0C0D12  );
 }
 
-.aboutme{
+#aboutme{
 	width: 60%;
 	height: 60%;
-	position: relative;
-	left: 0;
-	transform : translate(35%,-6%);
+	text-align: center;
 	background-color: black;
-	margin-top: 0; 
-	padding: 0;
-
+	margin-right: 20%; 
+	margin-left: 20%;
 }
 
-.aboutme h1{
-	text-align: center;
+#aboutme h1{
 	font-family: "Staatliches","Work Sans", serif;
 	font-size: 7em;
 	letter-spacing: 0.10em;
 	font-weight: bold;
-	color: #B5B9C5;
-	padding-top: 4%; 
+	color: white/*#B5B9C5*/;
 }
 
-.aboutme p{
-	
-	text-align: center;
+#aboutme p{
+	text-align: justify;
 	font-size: 1.5em;
-	color: white;
-	padding: 6%;
+	color: #D0D3D4/*#ECF0F1 #D4AC0D*/;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 5%;
+	padding-bottom: 7%;
+	font-family: "Overpass","Work Sans", serif;
+	font-style: italic;
 }
+/*-------------------------------------------------------------*/
 
-#page3{
-	width: 100%;
-	height: 100%;
-	background-image: linear-gradient(#293146 ,#252C3F ,#161B26 ,#0E1017,#0C0D12  );
-	margin:0;
-}
-
-#showreel{
-	height: 100%;
-	width: 100%;
+.container{
 	margin-top: 7%;
+	background-image: linear-gradient(#000000,#0B0B0B,#141414,#1E1E1E);
 }
 
-#vid-row{
-	margin-left:10% ;
-	margin-right:10%;
-}
+#tile1 {position: relative;}
+#tile2 {position: relative;  }
 
-.vid-thumb{
-	height: 380px;
-	width: 480px;
-}
-
-.play_button{
+#tile1 img{
 	position: relative;
-	top: -220px;	
-	left: 44%;
-	cursor: pointer;
+	width: 100%;
+	height: 450px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	z-index: 500;
 }
 
-.play{
-	opacity: 0;
-}
-
-#vidz:hover .play{
-	opacity : 1 !important;
-}
-
-#showreel h1{
-	text-align: center;
-	font-size: 7em;
-	letter-spacing: 1em;
-	font-size: bolder;
-	margin-top: 0;
-	margin-bottom: 0;
-	font-family: "Kanit","Work Sans", serif;
+#tile2 img{
 	position: relative;
-	top: -90px;
-	color:#B5B9C5;
+	width: 100%;
+	height: 430px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	z-index: 500;
 }
 
-#vid-row2{
-	margin-left:10% ;
-	margin-right:10%;
-	position: relative;
-	top: -120px;
+#play {opacity: 0;}
+
+#play img{
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	padding: 0;
+	margin:0;
+	height: 60px;
+	width: 60px;
 }
 
+#tile1:hover{
+	opacity: 0.7;
+}
+
+#tile1:hover #play{
+	opacity: 1;
+} 
+
+#tile2:hover{
+	opacity: 0.7;
+}
+
+#tile2:hover #play{
+	opacity: 1;
+} 
+
+
+
+/*-------------------------------------------------------------*/
 .modal-dialog{
-	position: relative;
-	margin: 0;
-	text-align: center;
-	left: 17%;
+	margin-right: auto;
+	margin-left: auto;
+	width: 70%;
 
 }
 
 .modal-content{
-	background: transparent;
-	border: none;
-	height: 100%;
 	width: 100%;
-	position: relative;
-	left: 0;
+	background: transparent;
+	text-align: center;
 }
 
-#end{
+iframe{
+	/*width: 70%;*/
 	width: 100%;
-	background-color: black;
-	margin:0;
-	padding: 0;
+	height: 700px;
 }
 
 
@@ -284,3 +250,201 @@ body {
 .endnote h2{
 	color: #B5B9C5;
 }
+
+#social-media-right{
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-right: 4%;
+}
+
+#social-media-bottom{
+	display: none;
+}
+/*-----------------------------------------------------------*/
+
+@media (max-width: 992px){
+	#page1{
+		height: 950px;
+	}
+
+	#profilepic img{
+		width: 50%;
+		height: 50%;
+	}
+
+	#aboutme{
+		width: 70%;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+
+	#aboutme p{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+
+	#tile1 img{
+		height: 400px;
+	}
+
+	#tile2 img{
+		height: 400px;
+	}
+
+	#play img{ height: 60px; }
+
+	.modal-dialog{
+		margin-right: auto;
+		margin-left: auto;
+		width: 90%;
+	}
+
+
+}
+/*----------------------------------------------------------*/
+
+@media (max-width: 767px){
+	#tile1 img{
+		height: 350px;
+		padding-top: 8%;
+		padding-bottom:8%;
+	}
+
+	#tile2 img{
+		height: 350px;
+		padding-top: 8%;
+		padding-bottom:8%;	 	
+	}
+
+	#play img{
+		padding: 0;
+		margin :0;
+		height: 50px;
+		width: 50px;
+	}
+}
+
+/*----------------------------------------------------------*/
+
+@media (max-width: 650px){
+	
+	#page1{
+		height: 800px;
+	}
+
+	#name h1{
+		font-size: 7em;
+	}
+	
+
+	#profilepic img{
+		width: 50%;
+		height: 50%;
+	}
+
+	#vbg{
+		background-image: none;
+	}	
+
+	#vbg video{
+		height: 100%;
+		width: 100%;
+		margin:0;
+	}
+
+	#blackstrip{
+		margin-top: 0;
+	}
+
+	#aboutme{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+
+	#aboutme p{
+		padding-right: 7%;
+		padding-left: 7%;
+	}
+
+	iframe{
+		height: 570px;
+	}
+
+	#social-media-right{
+		display: none;
+	}
+	
+	#social-media-bottom{
+		display: inline;
+	}
+}
+/*---------------------------------------------------------------*/
+
+@media (max-width: 495px){
+	
+	#tile1 img{
+		height: 240px;
+	}
+
+	#tile2 img{
+		height: 250px;
+	}
+
+	#play img{
+
+		padding: 0;
+		margin :0;
+		height: 50px;
+		width: 50px;
+
+	}
+
+	#aboutme h1{
+		font-size: 5em;
+	}
+
+}
+
+/*----------------------------------------------------------*/
+
+
+@media (max-width: 450px){
+
+	#page1{
+		height: 720px;
+	}
+
+	#name h1{
+		font-size: 6em;
+	}
+
+	#profilepic img{
+		width: 60%;
+		height: 60%;
+	}
+
+	#aboutme{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	#aboutme p{
+		padding-right: 5%;
+		padding-left: 5%;
+		font-size: 1.2em;
+
+	}
+
+	iframe{
+		height: 400px;
+	}
+
+	#endnote h3{
+		font-size: 0.7em;
+	}
+}
+
