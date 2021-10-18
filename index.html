@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shivam Jhariya</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+   	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English|Work+Sans|Bangers|Staatliches|Nova+Flat|Kanit|Arvo|Teko|Overpass">
+
+	<script type="text/javascript">
+		
+		$(function(){  // $(document).ready shorthand
+			  $('.monster').fadeIn('slow');
+			});
+
+			$(document).ready(function() {
+			    
+			    /* Every time the window is scrolled ... */
+			    $(window).scroll( function(){
+			    
+			        /* Check the location of each desired element */
+			        $('.hideme').each( function(i){
+			            
+			            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+			            var bottom_of_window = $(window).scrollTop() + $(window).height();
+			            
+			            /* If the object is completely visible in the window, fade it it */
+			            if( bottom_of_window > bottom_of_object ){
+			                
+			                $(this).animate({'opacity':'1'},1500);
+			                    
+			            }
+			            
+			        }); 
+			    
+			    });
+			    
+			});
+	</script>    
+
+</head>
+
+<body>
+
+	<div id="nav">
+		<p>“I should be a 4word quuote”</p>
+	</div>
+
+	<div id="page1">
+		<div id="name">
+			<div id="portfolio"><p><i>portfolio</i></p></div>
+			<div id="shivam"><h1>SHIVAM</h1></div>
+			<div id="shivam"><h1>JHARIYA</h1></div>
+			<div id="video-editor"><h3>.VIDEOEDITOR.</h3></div>
+			<br>	
+
+			<div id="plus"><p>+</p></div>		
+			<br>
+			<div class="hideme" id="profilepic">
+				<img src="img/profilepic.jpg"  class="img-circle" alt="profile picture"  >
+			</div>
+			<br>
+			<div id="plus"><p>+</p></div>		
+			
+		</div>
+	</div>
+
+	<div id="blackstrip"></div>
+	<div id="vbg">
+		<video poster="img/ok1.png" autoplay="autoplay" controls="controls" >
+			<source src="vids/profile_video.mp4" type="video/mp4">
+				unable to load video	
+		</video>
+	</div>
+	<div id="blackstrip"></div>
+
+	<div id="page2">
+		<div class="hideme" id="aboutme">
+			<h1>ABOUT ME</h1>
+			<br>
+			<p>	Hey!
+				My name is Shivam Jhariya a I'm a self taught freelance video editor from India
+				and have been editing videos more than 3 years. I am actually a Civil engineering student, but as they say an Engineer can do anything, I feel myself more leaned towards video editing.
+
+				I can edit your clips and turn them into a amazing video with my professional touch, with awesome sound design and color grading. I can edit commercials, music videos, travel videos,trailers,interviews and many more...
+
+				You can check some of my work in the showreel below, also can find them at my Fiverr portfolio or can contact me for further samples.
+
+				Feel free to contact me and ask any questions before we start working on your project to make sure you get exactly as you expect. You can connect with me on my social media, the links are provided here in the website. 
+
+				Have a Good day!!
+			</p>
+		</div>
+		<br>
+		<div id="plus"><p>+</p></div>
+		<!------------------------------------------------------------------>
+				
+		<div class="container">
+
+			<div class="hideme row">
+				<div class="col-md-8 col-sm-8 col-xs-8" id=tile1>
+					<img src="img/bnav.jpg" data-toggle="modal" data-target="#video-1">
+					<div id="play"><img src="img/play.png" ></div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-4" id="tile2">
+					<img src="img/ok2.png" data-toggle="modal" data-target="#video-2">
+					<div id="play"><img src="img/play.png" ></div>
+				
+				</div>
+			</div>
+
+			<div class="hideme row">
+				<div class="col-md-4 col-sm-4 col-xs-4" id="tile2">
+					<img src="img/guitar.png" data-toggle="modal" data-target="#video-3">
+					<div id="play"><img src="img/play.png" ></div>
+				</div>
+
+				<div class="col-md-8 col-sm-8 col-xs-8" id=tile1>
+					<img src="img/rooh.png" data-toggle="modal" data-target="#video-5">
+					<div id="play"><img src="img/play.png" ></div>
+				</div>
+				
+
+			</div>
+
+			<div class="hideme row">
+				<div class="col-md-8 col-sm-8 col-xs-8" id=tile1>
+					<img src="img/aeter.jpg" data-toggle="modal" data-target="#video-4">
+					<div id="play"><img src="img/play.png" ></div>
+				</div>
+
+				<div class="col-md-4 col-sm-4 col-xs-4" id="tile2">
+					<img src="img/oh.jpg" data-toggle="modal" data-target="#video-6">
+					<div id="play"><img src="img/play.png" ></div>
+				</div>
+			</div>
+
+			
+		</div>
+
+		<br>
+		<div id="plus"><p>+</p></div>
+		<br>
+
+		<!--MODALS----------------------------------------------------------->
+		
+		<div class="modal fade" id="video-1">
+			<div class="modal-dialog ">
+		    	<div class="modal-content">
+				      	
+		      		<div class="modal-body">
+		      			<iframe src="https://player.vimeo.com/video/541208417?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Beyond Navratri-1.mp4"></iframe>
+		      		</div>
+				      
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="video-2">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+				      	
+		      		<div class="modal-body">
+		      			<iframe src="https://player.vimeo.com/video/543726276?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title="reel.mp4"></iframe></iframe>
+		      		</div>
+				      
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="video-3">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+				      	
+		      		<div class="modal-body">
+		      			<iframe src="https://player.vimeo.com/video/543614000?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title="Guitar B roll Final.mp4"></iframe>
+		      		</div>
+				      
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="video-4">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+				      	
+		      		<div class="modal-body">
+		      			<iframe src="https://player.vimeo.com/video/543608626?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title="Aeteri Owlsu.mp4"></iframe>
+		      		</div>
+				      
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="video-5">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+				      	
+		      		<div class="modal-body">
+		      			<iframe src="https://player.vimeo.com/video/533886046?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen  title="Rooh dekhi h kabhi?"></iframe>
+		      		</div>
+				      
+		    	</div>
+		  	</div>
+		</div>
+
+		<div class="modal fade" id="video-6">
+			<div class="modal-dialog">
+		    	<div class="modal-content">
+				      	
+		      		<div class="modal-body">
+		      			<iframe src="https://player.vimeo.com/video/543733175?title=0&byline=0&portrait=0&speed=0&badge=0&autopause=0&player_id=0&app_id=58479/embed" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen frameborder="0" ></iframe>
+		      		</div>
+				      
+		    	</div>
+		  	</div>
+		</div>
+
+		<!------------------------------------------------------------------->
+
+	</div>
+
+	<div class="hideme endnote">
+		<h2>Shivam Jhariya</h2>
+		<h4>video editor</h4>
+		<div id="social-media-bottom">
+			<a href="https://www.instagram.com/shivamjhariya008/"><img src="img/insta_b.png" class="img-circle" width="35" height="35"></a>
+			<a href="https://www.fiverr.com/share/pl3QzR"><img src="img/3.png" class="img-circle" width="35" height="35"></a>
+			<a href="https://www.linkedin.com/in/shivam-jhariya-3345511a5"><img src="img/linkedin_b.png" class="img-circle" width="35" height="35"></a>
+			<a href="https://www.facebook.com/shivam.jhariya.773776"><img src="img/facebook_b.png" class="img-circle" width="35" height="35"></a>
+
+		</div>
+		<br>
+		<h3><i>Your one-step solution to portraying all of your fascinating and amazing stories</i></h3>
+	</div>
+
+	<div id="social-media-right">
+			<a href="https://www.instagram.com/shivamjhariya008/"><img src="img/insta.png" class="img-circle" width="35" height="35"></a><br><br>
+			<a href="https://www.fiverr.com/share/pl3QzR"><img src="img/fiverr.png" class="img-circle" width="35" height="35"></a><br><br>
+			<a href="https://www.linkedin.com/in/shivam-jhariya-3345511a5"><img src="img/linkedin.png" class="img-circle" width="35" height="35"></a><br><br>
+			<a href="https://www.facebook.com/shivam.jhariya.773776"><img src="img/facebook.png" class="img-circle" width="35" height="35"></a>
+	</div>
+	
+</body>
+
+</html>
+	
