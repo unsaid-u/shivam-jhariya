@@ -131,6 +131,11 @@ body {
 	background-image: linear-gradient(#293146 ,#252C3F ,#161B26 ,#0E1017,#0C0D12  );
 }
 
+.hideme
+{
+    opacity:0;
+}
+
 #aboutme{
 	width: 60%;
 	height: 60%;

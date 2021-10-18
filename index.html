@@ -19,6 +19,36 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica|IM+Fell+English|Work+Sans|Bangers|Staatliches|Nova+Flat|Kanit|Arvo|Teko|Overpass">
 
+	<script type="text/javascript">
+		
+		$(function(){  // $(document).ready shorthand
+			  $('.monster').fadeIn('slow');
+			});
+
+			$(document).ready(function() {
+			    
+			    /* Every time the window is scrolled ... */
+			    $(window).scroll( function(){
+			    
+			        /* Check the location of each desired element */
+			        $('.hideme').each( function(i){
+			            
+			            var bottom_of_object = $(this).position().top + $(this).outerHeight();
+			            var bottom_of_window = $(window).scrollTop() + $(window).height();
+			            
+			            /* If the object is completely visible in the window, fade it it */
+			            if( bottom_of_window > bottom_of_object ){
+			                
+			                $(this).animate({'opacity':'1'},1500);
+			                    
+			            }
+			            
+			        }); 
+			    
+			    });
+			    
+			});
+	</script>    
 
 </head>
 
@@ -38,7 +68,7 @@
 
 			<div id="plus"><p>+</p></div>		
 			<br>
-			<div id="profilepic">
+			<div class="hideme" id="profilepic">
 				<img src="img/profilepic.jpg"  class="img-circle" alt="profile picture"  >
 			</div>
 			<br>
@@ -57,7 +87,7 @@
 	<div id="blackstrip"></div>
 
 	<div id="page2">
-		<div id="aboutme">
+		<div class="hideme" id="aboutme">
 			<h1>ABOUT ME</h1>
 			<br>
 			<p>	Hey!
@@ -79,42 +109,42 @@
 				
 		<div class="container">
 
-			<div class="row">
+			<div class="hideme row">
 				<div class="col-md-8 col-sm-8 col-xs-8" id=tile1>
-					<img src="img/bnav.jpg" >
-					<div id="play"><img src="img/play.png" data-toggle="modal" data-target="#video-1" ></div>
+					<img src="img/bnav.jpg" data-toggle="modal" data-target="#video-1">
+					<div id="play"><img src="img/play.png" ></div>
 				</div>
 
 				<div class="col-md-4 col-sm-4 col-xs-4" id="tile2">
-					<img src="img/ok2.png" >
-					<div id="play"><img src="img/play.png" data-toggle="modal" data-target="#video-2"></div>
+					<img src="img/ok2.png" data-toggle="modal" data-target="#video-2">
+					<div id="play"><img src="img/play.png" ></div>
 				
 				</div>
 			</div>
 
-			<div class="row">
+			<div class="hideme row">
 				<div class="col-md-4 col-sm-4 col-xs-4" id="tile2">
-					<img src="img/guitar.png" >
-					<div id="play"><img src="img/play.png" data-toggle="modal" data-target="#video-3"></div>
+					<img src="img/guitar.png" data-toggle="modal" data-target="#video-3">
+					<div id="play"><img src="img/play.png" ></div>
 				</div>
 
 				<div class="col-md-8 col-sm-8 col-xs-8" id=tile1>
-					<img src="img/rooh.png" >
-					<div id="play"><img src="img/play.png" data-toggle="modal" data-target="#video-5"></div>
+					<img src="img/rooh.png" data-toggle="modal" data-target="#video-5">
+					<div id="play"><img src="img/play.png" ></div>
 				</div>
 				
 
 			</div>
 
-			<div class="row">
+			<div class="hideme row">
 				<div class="col-md-8 col-sm-8 col-xs-8" id=tile1>
-					<img src="img/aeter.jpg" >
-					<div id="play"><img src="img/play.png" data-toggle="modal" data-target="#video-4"></div>
+					<img src="img/aeter.jpg" data-toggle="modal" data-target="#video-4">
+					<div id="play"><img src="img/play.png" ></div>
 				</div>
 
 				<div class="col-md-4 col-sm-4 col-xs-4" id="tile2">
-					<img src="img/oh.jpg" >
-					<div id="play"><img src="img/play.png" data-toggle="modal" data-target="#video-6"></div>
+					<img src="img/oh.jpg" data-toggle="modal" data-target="#video-6">
+					<div id="play"><img src="img/play.png" ></div>
 				</div>
 			</div>
 
@@ -203,12 +233,12 @@
 
 	</div>
 
-	<div class="endnote">
+	<div class="hideme endnote">
 		<h2>Shivam Jhariya</h2>
 		<h4>video editor</h4>
 		<div id="social-media-bottom">
 			<a href="https://www.instagram.com/shivamjhariya008/"><img src="img/insta_b.png" class="img-circle" width="35" height="35"></a>
-			<a href="https://www.fiverr.com/share/pl3QzR"><img src="img/fiverr_b.png" class="img-circle" width="35" height="35"></a>
+			<a href="https://www.fiverr.com/share/pl3QzR"><img src="img/3.png" class="img-circle" width="35" height="35"></a>
 			<a href="https://www.linkedin.com/in/shivam-jhariya-3345511a5"><img src="img/linkedin_b.png" class="img-circle" width="35" height="35"></a>
 			<a href="https://www.facebook.com/shivam.jhariya.773776"><img src="img/facebook_b.png" class="img-circle" width="35" height="35"></a>
 
