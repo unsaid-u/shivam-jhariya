@@ -113,6 +113,13 @@ body {
 	background-image: url('video-bg03.jpg');
 	/*background-size: cover; */
 	text-align: center;
+	height: 100%;
+
+	  /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #vbg video{
@@ -279,7 +286,11 @@ iframe{
 		width: 50%;
 		height: 50%;
 	}
-
+	
+	#vbg{
+		background-attachment: scroll;
+	}
+	
 	#aboutme{
 		width: 70%;
 		margin-left: 15%;
